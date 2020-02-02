@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="212.0" prefWidth="270.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MainViewController">
+    <children>
+      <TextArea fx:id="inputTextArea" layoutX="15.0" layoutY="36.0" prefHeight="64.0" prefWidth="240.0" />
+      <ToggleButton fx:id="toggleButton" layoutX="14.0" layoutY="6.0" mnemonicParsing="false" onAction="#toggleAction" text="To Morse" />
+      <Button fx:id="executeButton" layoutX="105.0" layoutY="104.0" mnemonicParsing="false" onAction="#executeAction" prefWidth="60.0" text="Encode" />
+      <TextArea fx:id="outputTextArea" layoutX="15.0" layoutY="133.0" prefHeight="64.0" prefWidth="240.0" wrapText="true" />
+      <Label fx:id="connectionStatus" layoutX="199.0" layoutY="10.0" text="Disconnected" />
+      <Button fx:id="connectButton" layoutX="123.0" layoutY="6.0" mnemonicParsing="false" onAction="#connectAction" text="Connect" />
+    </children>
+</AnchorPane>
